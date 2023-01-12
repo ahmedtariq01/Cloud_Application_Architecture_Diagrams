@@ -2,10 +2,10 @@
 <p align = "justify">
 <ol>
 Design of an end-to-end CI/CD delivery pipeline for a website on AWS that has following components:
-<li>1) EC2 instances for some static calculations</li>
-<li>2) S3 for website pages </li>
-<li>3) API GW and lambda triggers</li>
-<li>4) CloudWatch alarms on number of API calls received</li>
+<li>EC2 instances for some static calculations</li>
+<li>S3 for website pages </li>
+<li>API GW and lambda triggers</li>
+<li>CloudWatch alarms on number of API calls received</li>
 </ol>
 </p>
 
@@ -31,21 +31,21 @@ Design of an end-to-end CI/CD delivery pipeline for a website on AWS that has fo
 
 <p align = "justify">
 To create an end-to-end CI/CD delivery pipeline for a website on AWS, you can follow these steps:
+<ol>
+<li>Set up an Amazon S3 bucket to store the website pages. The bucket should be configured to host a static website.
 
-1. Set up an Amazon S3 bucket to store the website pages. The bucket should be configured to host a static website.
+<li>Set up an Amazon EC2 instance to run the static calculations required by the website. The EC2 instance should be configured to run the necessary software and libraries for the calculations.
 
-2. Set up an Amazon EC2 instance to run the static calculations required by the website. The EC2 instance should be configured to run the necessary software and libraries for the calculations.
+<li>Set up an Amazon API Gateway to handle requests to the website and trigger corresponding Lambda functions to handle the requests.
 
-3. Set up an Amazon API Gateway to handle requests to the website and trigger corresponding Lambda functions to handle the requests.
+<li>Set up Lambda functions to handle the requests from the API Gateway and perform the necessary actions. For example, a Lambda function can be triggered when an API request is received to retrieve data from the EC2 instance and return it to the website.
 
-4. Set up Lambda functions to handle the requests from the API Gateway and perform the necessary actions. For example, a Lambda function can be triggered when an API request is received to retrieve data from the EC2 instance and return it to the website.
+<li>Set up an Amazon CloudWatch alarm to monitor the number of API calls received by the API Gateway. The alarm can be configured to send a notification when the number of API calls exceeds a certain threshold.
 
-5. Set up an Amazon CloudWatch alarm to monitor the number of API calls received by the API Gateway. The alarm can be configured to send a notification when the number of API calls exceeds a certain threshold.
+<li>To enable continuous delivery, you can set up a continuous integration (CI) tool such as Jenkins or AWS CodePipeline. The CI tool can be configured to automatically build, test, and deploy the website to the S3 bucket whenever code changes are made to the website's source code.
 
-6. To enable continuous delivery, you can set up a continuous integration (CI) tool such as Jenkins or AWS CodePipeline. The CI tool can be configured to automatically build, test, and deploy the website to the S3 bucket whenever code changes are made to the website's source code.
-
-7. To enable continuous deployment, you can set up a deployment pipeline in the CI tool. The deployment pipeline can be configured to automatically deploy the website to the S3 bucket and update the API Gateway and Lambda functions when new code is pushed to the repository.
-
+<li>To enable continuous deployment, you can set up a deployment pipeline in the CI tool. The deployment pipeline can be configured to automatically deploy the website to the S3 bucket and update the API Gateway and Lambda functions when new code is pushed to the repository.
+</ol>
 By following these steps, you can create an end-to-end CI/CD delivery pipeline for a website on AWS that uses EC2 instances for static calculations, S3 for website pages, API Gateway and Lambda triggers, and CloudWatch alarms to monitor the number of API calls received.
 
 </p>
