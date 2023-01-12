@@ -1,10 +1,11 @@
 ## Architection Design Description:
+<p align = "justify">
 Design of an end-to-end CI/CD delivery pipeline for a website on AWS that has following components:
 1) EC2 instances for some static calculations
 2) S3 for website pages
 3) API GW and lambda triggers
 4) CloudWatch alarms on number of API calls received
-
+</p>
 
 
 
@@ -26,7 +27,7 @@ Design of an end-to-end CI/CD delivery pipeline for a website on AWS that has fo
 </div>
 </br>
 
-
+<p align = "justify">
 To create an end-to-end CI/CD delivery pipeline for a website on AWS, you can follow these steps:
 
 1. Set up an Amazon S3 bucket to store the website pages. The bucket should be configured to host a static website.
@@ -44,3 +45,5 @@ To create an end-to-end CI/CD delivery pipeline for a website on AWS, you can fo
 7. To enable continuous deployment, you can set up a deployment pipeline in the CI tool. The deployment pipeline can be configured to automatically deploy the website to the S3 bucket and update the API Gateway and Lambda functions when new code is pushed to the repository.
 
 By following these steps, you can create an end-to-end CI/CD delivery pipeline for a website on AWS that uses EC2 instances for static calculations, S3 for website pages, API Gateway and Lambda triggers, and CloudWatch alarms to monitor the number of API calls received.
+
+</p>
