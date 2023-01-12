@@ -23,9 +23,9 @@ We have the limitation that our API gateway has the maximum payload capacity of 
 
 <li>Create the first Lambda function using the AWS CDK in Python, which is responsible for generating a presigned URL for the client to use to upload a file to the S3 bucket. The Lambda function should be configured to allow the API Gateway to invoke it.</li>
 
-<li>Create the second Lambda function using the AWS CDK in Python, which is responsible for generating a presigned URL for the client to use to download a file from the S3 bucket. The Lambda function should be configured to allow the API Gateway to invoke it.</li>
-
 <li>Configure the S3 bucket to trigger the second Lambda function whenever a new object is created. The Lambda function should be configured to allow the S3 bucket to invoke it.</li>
+
+<li>Create the second Lambda function using the AWS CDK, which sends an SES notification to the user once the file is uploaded.</li>
 
 <li>Configure the API Gateway to trigger the first Lambda function when a request is received. The Lambda function should be configured to allow the API Gateway to invoke it.</li>
 
