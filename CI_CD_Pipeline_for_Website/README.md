@@ -1,12 +1,12 @@
 ## Architection Design Description:
 <p align = "justify">
-<ul>
+<ol>
 Design of an end-to-end CI/CD delivery pipeline for a website on AWS that has following components:
 <li>1) EC2 instances for some static calculations</li>
 <li>2) S3 for website pages </li>
 <li>3) API GW and lambda triggers</li>
 <li>4) CloudWatch alarms on number of API calls received</li>
-</ul>
+</ol>
 </p>
 
 
