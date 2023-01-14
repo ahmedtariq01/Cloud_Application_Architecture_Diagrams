@@ -11,7 +11,7 @@ Design a HealthCheck Application for a Website, application should contains the 
 
 ##  Architecture Diagram:
 
-### Uploading Large Payloads on S3 Architecture Diagram
+### WebApp HealthCheck Architecture Diagram
 <div align="center">
    <div align="center">
     <img src="Architecture_Diagram/WebApp_Healthcheck.jpg" width='700'/>
