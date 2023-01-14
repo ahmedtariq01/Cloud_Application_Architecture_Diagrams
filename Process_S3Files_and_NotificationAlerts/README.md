@@ -5,7 +5,7 @@
 
 ##  Architecture Diagram:
 
-### Uploading Large Payloads on S3 Architecture Diagram
+### Process files on S3 and email the results Architecture Diagram
 <div align="center">
    <div align="center">
     <img src="Architecture_Diagram/Process_S3Files_and_NotificationAlerts.jpg" width='700'/>
